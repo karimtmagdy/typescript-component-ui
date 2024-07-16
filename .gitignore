@@ -32,3 +32,9 @@ git commit -m "update"
 git branch -M 'master' 
 git push --force origin master
 /assets
+/app.tsx
+src/app.tsx
+./src/app.tsx
+*./src/app.tsx
+/src/app.tsx
+!.md
