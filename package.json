@@ -1,7 +1,7 @@
 {
   "name": "typescript-component-ui",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -16,13 +16,13 @@
     }
   },
   "description": "Frontend component library for TypeScript",
-  "homepage": "https://github.com/karimtarek/typescript-component-ui",
+  "homepage": "https://github.com/karimtmagdy/typescript-component-ui",
   "repository": {
     "type": "git",
-    "url": "https://github.com/karimtarek/typescript-component-ui.git"
+    "url": "https://github.com/karimtmagdy/typescript-component-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/karimtarek/typescript-component-ui/issues"
+    "url": "https://github.com/karimtmagdy/typescript-component-ui/issues"
   },
   "keywords": [
     "typescript",
