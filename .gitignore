@@ -12,8 +12,10 @@ lib
 dist
 dist-ssr
 *.local
-
-~/.config/git/ignore
+package-lock.json
+*tsconfig.json
+tsconfig.json
+tsconfig.node.json
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
