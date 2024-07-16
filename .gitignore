@@ -6,8 +6,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-*.App.tsx
-*.main.tsx
+/src/App.tsx
+*/src/main.tsx
+/src/main.tsx
 App
 main
 node_modules
@@ -26,7 +27,7 @@ dist-ssr
 *.sln
 *.sw?
 git add . 
- git commit -m "update"  
+git commit -m "update"  
 git branch -M 'master' 
 git push --force origin master
 
