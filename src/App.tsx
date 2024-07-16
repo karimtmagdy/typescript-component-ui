@@ -46,7 +46,7 @@ function App() {
         value={count}
         shape="rounded"
         onClick={() => setCount(count + 1)}
-        bezel="poppy"
+        bezel="light"
         size="xl"
       />
     </>
