@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+@layer components {
+  .toggle-circle {
+    @apply rounded-full;
+  }
+  .toggle-switch {
+    @apply rounded-full px-0.5;
+  }
+  .toggle-menu {
+    @apply flex-col p-0.5;
+  }
+  .toggle-icon {
+    @apply w-full rounded-lg transition-all duration-300 bg-white dark:bg-black h-0.5;
+  }
+  .side {
+    @apply flex items-center;
+  }
+  .button {
+    @apply flex items-center text-white active:text-white font-medium relative;
+  }
+  .list {
+    @apply flex items-center transition-colors;
+  }
+}
