@@ -13,10 +13,10 @@ src/App.tsx
 App
 main
 node_modules
+lib
 dist
 dist-ssr
 *.local
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -32,6 +32,7 @@ git commit -m "update"
 git branch -M 'master' 
 git push --force origin master
 /assets
+assets
 /app.tsx
 src/app.tsx
 ./src/app.tsx
