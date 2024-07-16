@@ -6,8 +6,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-/src/App.tsx
+src/App.tsx
 */src/main.tsx
+*./src/main.tsx
 /src/main.tsx
 App
 main
