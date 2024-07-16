@@ -1,30 +1,57 @@
-# React + TypeScript + Vite
+# Tailwind Unique
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![npm License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![npm version](https://img.shields.io/npm/v/tailwind-unique.svg?style=flat-square)](https://www.npmjs.org/package/tailwind-unique)
+[![npm downloads](https://img.shields.io/npm/dm/tailwind-unique.svg?style=flat-square)](https://npm-stat.com/charts.html?package=tailwind-unique)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
 ```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
+npm install tailwind-unique
+```
+
+## Usage
+
+```js
+import { Button } from "tailwind-unique";
+```
+
+### Example
+
+```js
+import { Button, ToggleCircle } from "tailwind-unique";
+function Header() {
+  return (
+    <Button mode="switch" width="xl" color={"warning"}>
+      <ToggleCircle width="xl" />
+    </Button>
+  );
+}
+
+function Page() {
+  return <Button text="login" />;
+}
+function App() {
+  return <Button size="sm">Hello World</Button>;
 }
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### More Examples
+
+```js
+function Menu() {
+  return <Button mode="menu">Hello World</Button>;
+}
+```
+
+### Notes
+
+- The package has not been completed yet, it is a version under trial when it is complete, I will let you know that, I hope this is not disappointing, thank you.
+
+- Currently, one official component are available:
+
+### information
+
+- This template provides minimal setup for component operation by Tailwind Unique with Vite.js and some rules that meet the trick to display a distinct interface to the user.
+
+- [@tailwind-unique](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
