@@ -1,11 +1,11 @@
-export interface ButtonProps {
+export interface ButtonProps  {
     type?: 'button' | 'submit' | 'reset';
     onClick?: () => void;
-    value: string | number | JSX.Element;
+    value?: string | number | JSX.Element;
     className?: string;
     disabled?: boolean;
     loading?: boolean;
-    chidlren?: React.ReactNode;
+    chidlren?: React.ReactNode | null;
     mode?: 'menu' | 'switch';
     arrow?: JSX.Element | null;
     icon?: JSX.Element | null;

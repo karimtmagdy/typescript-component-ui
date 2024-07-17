@@ -1,6 +1,8 @@
 import { cva } from "class-variance-authority";
 import { twMerge } from "tailwind-merge";
 import { ButtonProps } from "./types";
+import React from "react";
+
 const Button: React.FC<ButtonProps> = ({
   className,
   width,
