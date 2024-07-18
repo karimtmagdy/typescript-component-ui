@@ -6,7 +6,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'component-ui',
+      name: 'typescript-component-ui',
       fileName: (format) => `typescript-component-ui.${format}.js`,
     },
     rollupOptions: {

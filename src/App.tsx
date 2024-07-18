@@ -11,16 +11,14 @@ function App() {
 
   return (
     <>
-      <h1 className="bg-green-500">Vite + React</h1>
-      <div className="card">
-        <Button
-          value={count}
-          shape="rounded"
-          onClick={() => setCount(count + 1)}
-          bezel="light"
-          size="xl"
-        />
-      </div>
+      <Button
+        value={count}
+        shape="rounded"
+        className="mx-auto"
+        onClick={() => setCount(count + 1)}
+        bezel="light"
+        px="xl"
+      />
     </>
   );
 }

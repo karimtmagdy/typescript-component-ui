@@ -1,57 +1,35 @@
 {
+  "homepage": "https://github.com/karimtmagdy/typescript-component-ui",
   "name": "typescript-component-ui",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
-  "main": "./lib/index.umd.js",
-  "module": "./lib/index.es.js",
-  "types": "./lib/index.d.ts",
+  "main": "lib/index.umd.js",
+  "module": "lib/index.es.js",
+  "types": "lib/index.d.ts",
   "license": "MIT",
+  "description": "Frontend component library for React TypeScript",
   "author": "Karim tarek",
-  "exports": {
-    ".": {
-      "import": "./lib/index.umd.js",
-      "require": "./lib/index.es.js",
-      "types": "./lib/index.d.ts"
-    },
-    "./styles": "./lib/index.css"
+  "release": {
+    "branches": [
+      "master"
+    ]
+  },
+  "files": [
+    "lib"
+  ],
+  "directories": {
+    "lib": "lib"
   },
   "publishConfig": {
     "access": "public"
   },
-  "description": "Frontend component library for React TypeScript",
-  "homepage": "https://github.com/karimtmagdy/typescript-component-ui",
   "repository": {
     "type": "git",
     "url": "https://github.com/karimtmagdy/typescript-component-ui.git"
   },
   "bugs": {
     "url": "https://github.com/karimtmagdy/typescript-component-ui/issues"
-  },
-  "keywords": [
-    "typescript",
-    "component",
-    "ui",
-    "react","demo"
-  ],
-  "files": [
-    "lib"
-  ],
-  "scripts": {
-    "dev": "vite",
-    "tsc": "tsup ./src --out-dir ./lib --copy-files",
-    "prepare": "npx babel src --out-dir lib --copy-files",
-    
-   "build": "tsup -b && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
-  "peerDependencies": {
-    "class-variance-authority": "^0.7.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "tailwind-merge": "^2.4.0",
-    "vite-plugin-dts": "^3.9.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.24.8",
@@ -75,6 +53,37 @@
     "vite": "^5.3.4"
   },
   "dependencies": {
-    "rollup": "^4.18.1"
-  }
+    "rollup": "^4.18.1",
+    "typescript-component-ui": "^0.0.3"
+  },
+  "scripts": {
+    "dev": "vite",
+    "tsc": "tsup src --out-dir lib --copy-files",
+    "prepare": "npx babel src --out-dir lib --copy-files",
+    "build": "tsup -b && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "class-variance-authority": "^0.7.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.4.0",
+    "vite-plugin-dts": "^3.9.1"
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/index.umd.js",
+      "require": "./lib/index.es.js",
+      "types": "./lib/index.d.ts"
+    },
+    "./styles": "./lib/index.css"
+  },
+  "keywords": [
+    "typescript",
+    "component",
+    "ui",
+    "react",
+    "demo"
+  ]
 }
